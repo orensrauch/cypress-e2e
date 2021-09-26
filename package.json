@@ -1,0 +1,37 @@
+{
+  "name": "cypress-e2e",
+  "version": "1.0.0",
+  "description": "cypress end 2 end test implementation",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox",
+    "cy:run:electron": "cypress run --browser electron",
+    "cy:run-dashboard": "cypress run --record --key 7d294511-24d3-4f55-8038-73f157710433",
+    "jenkins": "java -Dfile.encoding=UTF-8 -jar jenkins.war --httpPort=8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orensrauch/cypress-e2e.git"
+  },
+  "keywords": [
+    "test-automation",
+    "cypress",
+    "e2e",
+    "sdlc"
+  ],
+  "author": "oren schuller rauch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orensrauch/cypress-e2e/issues"
+  },
+  "homepage": "https://github.com/orensrauch/cypress-e2e#readme",
+  "dependencies": {
+    "cypress": "^8.4.1",
+    "prettier": "^2.4.1"
+  },
+  "devDependencies": {
+    "cypress-localstorage-commands": "^1.5.0"
+  }
+}
